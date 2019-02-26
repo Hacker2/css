@@ -1,0 +1,164 @@
+<html>
+<body>
+text-indent
+      <div style="text-indent:5%">hello world</div>
+      <div style="text-indent:50px">hello world</div>
+      <div style="text-indent:5em">hello world</div>
+      <div style="text-indent:-1em">hello world</div>
+      <div style="text-indent:-1em;padding-left:1em">hello world</div>
+      <div style="width: 200px"><div style="text-indent:5%">This paragraph is contained inside a DIV</div></div>
+      <div style="text-indent:50px">some text<div >This paragraph is contained inside a DIV</div></div>
+
+text-align
+      <div style="text-align:start">hello world</div>
+      <div style="text-align:end">hello world</div>
+      <div style="text-align:left">hello world</div>
+      <div style="text-align:right">hello world</div>
+      <div style="text-align:center">hello world</div>
+      <div style="text-align:justify">The user agent—and not CSS, at least as of late 2017—determines how justified text
+should be stretched to fill the space between the left and right edges of the parent.
+Some browsers, for example, might add extra space only between words, while others
+might distribute the extra space between letters (although the CSS specification states
+that “user agents may not further increase or decrease the inter-character space” if the
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+      <div style="text-align:match-parent">The user agent—and not CSS, at least as of late 2017—determines how justified text
+should be stretched to fill the space between the left and right edges of the parent.
+Some browsers, for example, might add extra space only between words, while others
+might distribute the extra space between letters (although the CSS specification states
+that “user agents may not further increase or decrease the inter-character space” if the
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+      <div style="text-align:startend">hello world</div>
+      text-align-last
+      <div style="text-align-last:auto">hello world</div>
+      <div style="text-align-last:start">hello world</div>
+      <div style="text-align-last:end">hello world</div>
+      <div style="text-align-last:left">hello world</div>
+      <div style="text-align-last:right">hello world</div>
+      <div style="text-align-last:center">hello world</div>
+      <div style="text-align-last:justify">hello world</div>
+      <div style="text-align: start;text-align-last:justify">hello world</div>
+line-height
+      <div style="line-height: 2">hello world</div>
+      <div style="line-height: 2em">hello world</div>
+      <div style="line-height: 20px">hello world</div>
+      <div style="line-height: 100%">hello world</div>
+vertical-align
+      <div>hello <div style="vertical-align: top">world</div></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: baseline;width:20px;height:20px"/>world <span style="vertical-align: baseline">baseline</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: sub;width:20px;height:20px"/>world <span style="vertical-align: sub">sub</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: super;width:20px;height:20px"/>world <span style="vertical-align: super">super</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: top;width:20px;height:20px"/>world <span style="vertical-align: top">top</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: text-top;width:20px;height:20px"/>world <span style="vertical-align: text-top">text-top</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: middle;width:20px;height:20px"/>world <span style="vertical-align: middle">middle</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: bottom;width:20px;height:20px"/>world <span style="vertical-align: bottom">bottom</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: textbottom;width:20px;height:20px"/>world <span style="vertical-align: textbottom">textbottom</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: 100%;width:20px;height:20px"/>world <span style="vertical-align: 100%">bottom</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: -100%;width:20px;height:20px"/>world <span style="vertical-align: -100%">textbottom</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: 20px;width:20px;height:20px"/>world <span style="vertical-align: 20px">bottom</span></div>
+      <div style="line-height:80px">hello <img src="css.png" style="vertical-align: -20px;width:20px;height:20px"/>world <span style="vertical-align: -20px">textbottom</span></div>
+      <div>The user agent—and not CSS, at least as of late 2017—determines how justified text
+should be stretched to fill the space between the left and right edges of the parent.
+Some browsers, for example, might add extra space only between words, while others
+might distribute the extra space between letters (although the CSS specification states
+<span style="vertical-align: 40px">that “user agents may not further increase or decrease the inter-character space” if the</span>
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+
+word-spacing
+      <div style="word-spacing: 10px">hello world</div>
+      <div style="word-spacing: 0px">hello world</div>
+      <div style="word-spacing: -10px">hello world</div>
+letter-spacing
+      <div style="letter-spacing: 10px">hello world</div>
+      <div style="letter-spacing: 0px">hello world</div>
+      <div style="letter-spacing: -2px">hello world</div>
+text-transform
+      <div style="text-transform: uppercase">HELLO worlD</div>
+      <div style="text-transform: lowercase">HELLO worlD</div>
+      <div style="text-transform: capitalize">HELLO worlD</div>
+      <div style="text-transform: none">HELLO worlD</div>
+text-decoration
+      <div style="text-decoration: overline">overline</div>
+      <div style="text-decoration: underline">underline</div>
+      <div style="text-decoration: line-through">line-through</div>
+      <div style="text-decoration: blink">blink</div>
+      <div style="text-decoration: none">none</div>
+      <div style="text-decoration: line-through">line-through<span>hello <span style="text-decoration: none">world</span></span></div>
+      <a href="#">link1</a>
+      <a href="#" style="text-decoration: none">link2</a>
+      <div style="text-decoration: overline line-through underline">hello world</div>
+      <div style="text-decoration: underline; color: green">line-through<span style="color: red">hello world</span></div>
+      <div style="text-decoration: underline; color: green">line-through<span style="text-decoration: underline; color: red">hello world</span></div>
+text-rendering
+      <div style="text-rendering: auto">hello world</div>
+      <div style="text-rendering: optimizeSpeed">hello world</div>
+      <div style="text-rendering: optimizeLegibility">hello world</div>
+      <div style="text-rendering: geometricPrecision">hello world</div>
+text-shadow
+      <div style="text-shadow: 5px 5px">hello world</div>
+      <div style="text-shadow: green 5px 5px">hello world</div>
+      <div style="text-shadow: -5px -5px">hello world</div>
+      <div style="text-shadow: 5px 5px 5px">hello world</div>
+white-space
+      <div style="white-space: normal">hello             normal</div>
+      <div style="white-space: nowrap">that              “user agents may not further increase or decrease the inter-character space” if the
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+           <div style="white-space: pre">that              “user agents may not further increase or decrease the inter-character space” if the property letter-spacing has been assigned a length value). Other user agents may reduce space on some lines, thus mashing the text together a bit more than usual. All of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+      <div style="white-space: pre-wrap">that              “user agents may not further increase or decrease the inter-character space” if the property letter-spacing has been assigned a length value). Other user agents may reduce space on some lines, thus mashing the text together a bit more than usual. All of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+      <div style="white-space: pre-line">that              “user agents may not further increase or decrease the inter-character space” if the
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+word-break
+      <div style="word-break: normal">user agents may not further increase or decrease the inter-character space if the
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+      <div style="word-break: break-all">user agents may not further increase or decrease the inter-character space if the
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+      <div style="word-break: keep-all">user agents may not further increase or decrease the inter-character space if the
+property letter-spacing has been assigned a length value). Other user agents may
+reduce space on some lines, thus mashing the text together a bit more than usual. All
+of these possibilities will affect the appearance of an element, and may even change its
+height, depending on how many lines of text result from the user agent’s justification
+choices.</div>
+overflow-wrap
+      <div style="overflow-wrap: normal">asdfdasfdasfdasfdasfdasfdasfdasfdasfdasfdasfasdfdasfasgfdasfdasjfhdasklfjdasklfjdaslasdfdasfdasfkjdhasfkjghjuidgsfkjdashfdkaslfhdasfklasdfdasfdasfdasfdasfdasfdasfdasfdasfdasfdasfasdfdasfasgfdasfdasjfhdasklfjdasklfjdaslasdfdasfdasfkjdhasfkjghjuidgsfkjdashfdkaslfhdasfklasdfdasfdasfdasfdasfdasfdasfdasfdasfdasfdasfasdfdasfasgfdasfdasjfhdasklfjdasklfjdaslasdfdasfdasfkjdhasfkjghjuidgsfkjdashfdkaslfhdasfkl</div>
+      <div style="overflow-wrap: break-word">asdfdasfdasfdasfdasfdasfdasfdasfdasfdasfdasfasdfdasfasgfdasfdasjfhdasklfjdasklfjdaslasdfdasfdasfkjdhasfkjghjuidgsfkjdashfdkaslfhdasfklasdfdasfdasfdasfdasfdasfdasfdasfdasfdasfdasfasdfdasfasgfdasfdasjfhdasklfjdasklfjdaslasdfdasfdasfkjdhasfkjghjuidgsfkjdashfdkaslfhdasfklasdfdasfdasfdasfdasfdasfdasfdasfdasfdasfdasfasdfdasfasgfdasfdasjfhdasklfjdasklfjdaslasdfdasfdasfkjdhasfkjghjuidgsfkjdashfdkaslfhdasfkl</div>
+writing-mode
+      <div style="writing-mode: horizontal-tb">horizontal-tb</div>
+      <div style="writing-mode: vertical-rl; height: 20px;">vertical-rl asdfdas</div><br><br>
+      <div style="writing-mode: vertical-lr; height: 20px;">vertical-lr asdfdas</div><br><br>
+direction //do not use //use html bdo instead
+      <div style="direction: ltr">ltr</div>
+      <div style="direction: rtl">rtl</div>
+
+</body>
+</html>
