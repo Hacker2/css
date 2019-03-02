@@ -89,6 +89,41 @@ border image
 <div style="border: solid; border-image-source: url(css.png); border-image-width: 10px;">border-image-slice Values</div>
 <div style="border: solid; border-image-source: url(css.png); border-image-width: 10px; border-image-outset: 5px">border-image-slice Values</div>
 
+outlines
+<div style="outline-style: solid;">block element</div>
+<div style="outline-style: dotted;">block element</div>
+<div style="outline-style: solid dotted dotted dotted;">block element</div>
+<div style="outline-style: dotted;border: 2px green solid">block element</div>
+<div style="outline-style: dotted;outline-width: 3px">block element</div>
+<div style="outline-style: dotted;outline-color: green">block element</div>
+<div style="outline-style: dotted;outline-color: invert">block element</div>
+<div style="outline: dotted green 2px;">block element</div>
+<div style="outline: dotted green 2px;border: 1px red solid; margin 5px;">block element</div>
+
+
+<span style="border: 1px solid;">The line height isn’t changed, but since the background color does extend into the
+padding, each line’s background ends up overlapping the lines that come before it.
+That’s the expected result The line height isn’t changed, but since the background color does extend into the
+padding, each line’s background ends up overlapping the lines that come before it.
+That’s the expected result</span>
+<span style="outline: 1px solid;">The line height isn’t changed, but since the background color does extend into the
+padding, each line’s background ends up overlapping the lines that come before it.
+That’s the expected result The line height isn’t changed, but since the background color does extend into the
+padding, each line’s background ends up overlapping the lines that come before it.
+That’s the expected result</span>
+
+margins
+<div style="margin: 0.25in; background-color: silver;">block element</div>
+<div style="margin: 5px 10px 20px 30px; background-color: silver;">block element</div>
+<div style="margin: 14px 5em 0.1in 3ex; background-color: silver;">block element</div>
+<div style="margin-top: 5px margin-right: 10px margin-bottom: 20px margin-lfet: 30px; background-color: silver;">block element</div>
+
+collaps
+<div style="margin-bottom: 5px;background-color: silver;">block element</div>
+<div style="margin-top: 5px; margin-bottom: 5px; background-color: silver;">block element</div>
+<div style="margin-top: -5px; background-color: silver;">block element</div>
+
+<span style="margin: 50px; background-color: silver;">block element</span>
 
 </body>
 </html>
