@@ -1,13 +1,62 @@
 <html>
 <body>
 
-<div> div</div>
+<div>div</div>
 hohoho
 <div style="float: left">float left</div>
 <div style="float: right">float right</div>
 <img src="css.png" style="height: 10px; width: 10px; float: right">
 <img src="css.png" style="height: 10px; width: 10px; float: left">
 hello world
+One of the first interesting things to notice about floated elements is that margins
+around floated elements do not collapse. If you float an image with 20-pixel margins,
+<div style="float: right;margin: 5px;">float right</div>there will be at least 20 pixels of space around that image. If other elements adjacent
+to the image—and that means adjacent horizontally and vertically—also have margins,
+those margins will not collapse with the margins on the floated image, as you
+<img src="css.png" style="height: 10px; width: 10px; float: right;margin-top: -60px;border: 5px solid green;">
+can see in Figure 10-3:
+
+left, right, both, none
+<img src="css.png" style="width: 50px;float: left;">
+<img src="css.png" style="width: 50px; float: left;clear: both">
+<img src="css.png" style="width: 50px;float: left;clear: both">
+
+<img src="https://cdn-images-1.medium.com/max/1600/1*eXIBeNlLhz4Pe6vDrYkXLQ.png" style="shape-margin: 1%; width: 150px;clear: both; float: left;shape-outside: url(https://cdn-images-1.medium.com/max/1600/1*eXIBeNlLhz4Pe6vDrYkXLQ.png)">One of the first interesting things to notice about floated elements is that margins
+around floated elements do not collapse. If you float an image with 20-pixel margins,
+there will be at least 20 pixels of space around that image. If other elements adjacent
+to the image—and that means adjacent horizontally and vertically—also have margins,
+those margins will not collapse with the margins on the floated image, as you can see in Figure 10-3:
+around floated elements do not collapse. If you float an image with 20-pixel margins,
+there will be at least 20 pixels of space around that image. If other elements adjacent
+to the image—and that means adjacent horizontally and vertically—also have margins,
+
+
+
+margin-box
+border-box
+padding-box
+content-box
+
+inset(-5px)
+inset(15px round 40% 50%)
+circle(25px)
+circle(25px at center)
+circle(25px at 50% 50%)
+ellipse(25px)
+ellipse(25px at center)
+ellipse(25px at 50% 50%)
+polygon(25px 0, 50px 25px, 25px 50px, 0 25px)
+polygon(50% 0, 100% 50%, 50% 100%, 0 50%)
+
+
+<div style="border: solid 3px; float: left; shape-outside: margin-box; background: silver; padding: 5px; margin: 10px;">hello world</div>One of the first interesting things to notice about floated elements is that margins
+around floated elements do not collapse. If you float an image with 20-pixel margins,
+there will be at least 20 pixels of space around that image. If other elements adjacent
+to the image—and that means adjacent horizontally and vertically—also have margins,
+those margins will not collapse with the margins on the floated image, as you can see in Figure 10-3:
+around floated elements do not collapse. If you float an image with 20-pixel margins,
+there will be at least 20 pixels of space around that image. If other elements adjacent
+to the image—and that means adjacent horizontally and vertically—also have margins,
 
 </body>
 </html>
