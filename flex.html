@@ -278,6 +278,28 @@ flex items
      <div>two</div>
 </div>
 
+flex
+<div style="display: flex;">
+     <div style="border: solid 1px;flex: 0 0 100px">one</div>
+     <div style="border: solid 1px;flex-grow: 0">two</div>
+     <div style="border: solid 1px;flex-shrink: 0;width: 100px">three</div>
+     <div style="border: solid 1px;flex-basis: 100px;">four</div>
+</div>
+
+<div style="display: flex;">
+     <div style="border: solid 1px;flex: initial">0 0 auto</div>
+     <div style="border: solid 1px;flex-grow: auto">1 1 auto</div>
+     <div style="border: solid 1px;flex-shrink: none;">0 0 auto</div>
+     <div style="border: solid 1px;flex-basis: 3;">3 0 0</div>
+</div>
+
+<div style="display: flex;">
+     <div style="border: solid 1px;order:3">one</div>
+     <div style="border: solid 1px;order:2">two</div>
+     <div style="border: solid 1px;order:4">three</div>
+     <div style="border: solid 1px;order:1">four</div>
+</div>
+
 
 </body>
 </html>
