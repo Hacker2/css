@@ -1,0 +1,111 @@
+<html>
+<body>
+
+before
+<table style="border: solid 1px;>
+       <tr style="margin: 50px;">
+           <td style="margin: 50px;">
+               hello
+           </td>
+           <td>
+               world
+           </td>
+       </tr>
+</table>
+after
+
+before
+<table style="border: solid 1px;display: table;>
+       <tr style="margin: 50px;">
+           <td style="margin: 50px;">
+               hello
+           </td>
+           <td>
+               world
+           </td>
+       </tr>
+</table>
+after
+
+before
+<table style="border: solid 1px;display: inline-table;>
+       <tr style="margin: 50px;">
+           <td style="margin: 50px;">
+               hello
+           </td>
+           <td>
+               world
+           </td>
+       </tr>
+</table>
+after
+
+<table style="border: solid 1px;display: table;">
+       <caption style="display: table-caption">caption</caption>
+       <thead style="display: table-header-gorup;">
+       head
+       </thead>
+       <tbody style="display: table-row-group;">
+       <tr style="margin: 50px; display: table-row;">
+           <td style="margin: 50px; display: table-column;">
+               hello
+           </td>
+           <td>
+               world
+           </td>
+       </tr>
+       </tbody>
+       <tfoot style="display: table-footer-group">
+       </tfoot>
+</table>
+
+<table style="background: green;">
+       <tr style="background: yellow;">
+           <td>hey</td>
+           <td style="background: cyan;">there</td>
+       </tr>
+</table>
+
+caption: top bottom
+<table style="border: solid 1px;">
+       <caption style="caption-side: bottom;">
+                this is caption
+       </caption>
+       <tr>
+           <td>hey</td>
+           <td>there</td>
+       </tr>
+</table>
+
+border-collapse: collapse and separate
+<table style="border: solid 1px; border-collapse: collapse">
+       <tr>
+           <td style="border: solid 1px;">hey</td>
+           <td>there</td>
+       </tr>
+</table>
+
+<table style="border: solid 1px; border-spacing: 4px 2px; empty-cells: hide">
+       <tr>
+           <td style="border: solid 1px;">hey</td>
+           <td style="border: solid 1px;"></td>
+       </tr>
+</table>
+
+<table style="border: solid 1px; table-layout: fixed; width: 200px;">
+       <colgroup> <col style="width: 50px;"><col style="width: 100px"></colgroup>
+       <tr>
+           <td style="width: 100px;border: solid 1px;">hey</td>
+           <td style="width: 100px;border: solid 1px;">there</td>
+       </tr>
+</table>
+<table style="border: solid 1px; table-layout: auto; width: 200px;">
+       <colgroup> <col style="width: 50px;"><col style="width: 100px"></colgroup>
+       <tr>
+           <td style="width: 100px;border: solid 1px;">hey</td>
+           <td style="width: 100px;border: solid 1px;">there</td>
+       </tr>
+</table>
+
+</body>
+</html>
