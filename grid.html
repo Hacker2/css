@@ -240,5 +240,96 @@ grid flow
   <div style="border: solid 1px;">five</div>
 </div>
 
+grid shorthand
+<div style="display: grid; grid: repeat(3, 1fr) / repeat(2, 1fr);border: solid 1px green;">
+  <div style="border: solid 1px;">one</div>
+  <div style="border: solid 1px;">two</div>
+  <div style="border: solid 1px;">three</div>
+  <div style="border: solid 1px;">four</div>
+  <div style="border: solid 1px;">five</div>
+</div>
+<div style="display: grid; grid: 20px 20px 20px / 100px 100px;border: solid 1px green;">
+  <div style="border: solid 1px;">one</div>
+  <div style="border: solid 1px;">two</div>
+  <div style="border: solid 1px;">three</div>
+  <div style="border: solid 1px;">four</div>
+  <div style="border: solid 1px;">five</div>
+</div>
+<div style="display: grid; grid: 'h h' 20px 'm m' 20px 'f f' 20px / 100px 100px;border: solid 1px green;">
+  <div style="border: solid 1px;">one</div>
+  <div style="border: solid 1px;">two</div>
+  <div style="border: solid 1px;">three</div>
+  <div style="border: solid 1px;">four</div>
+  <div style="border: solid 1px;">five</div>
+</div>
+
+grid gaps
+<div style="display: grid; grid-row-gap: 10px;grid-column-gap: 20px; grid: repeat(3, 1fr) / repeat(2, 1fr);border: solid 1px green;">
+  <div style="border: solid 1px;">one</div>
+  <div style="border: solid 1px;">two</div>
+  <div style="border: solid 1px;">three</div>
+  <div style="border: solid 1px;">four</div>
+  <div style="border: solid 1px;">five</div>
+</div>
+<div style="display: grid; grid-gap: 10px 20px; grid: repeat(3, 1fr) / repeat(2, 1fr);border: solid 1px green;">
+  <div style="border: solid 1px;">one</div>
+  <div style="border: solid 1px;">two</div>
+  <div style="border: solid 1px;">three</div>
+  <div style="border: solid 1px;">four</div>
+  <div style="border: solid 1px;">five</div>
+</div>
+
+<div style="display: grid; grid-gap: 10px 20px; grid: repeat(3, 1fr) / repeat(2, 1fr);border: solid 1px green;">
+  <div style="border: solid 1px; margin: 25px">one</div>
+  <div style="border: solid 1px;">two</div>
+  <div style="border: solid 1px;">three</div>
+  <div style="border: solid 1px;">four</div>
+  <div style="border: solid 1px; margin: -5px;">five</div>
+</div>
+
+justify
+<div style="display: grid; grid: repeat(3, 40px) / repeat(2, 100px);border: solid 1px green;justify-items: left">
+  <div style="border: solid 1px; height: 20px;">left</div>
+  <div style="border: solid 1px; justify-self: right; height: 20px;">right</div>
+  <div style="border: solid 1px; justify-self: start; height: 20px;">start</div>
+  <div style="border: solid 1px; justify-self: end; height: 20px;">end</div>
+  <div style="border: solid 1px; justify-self: center; height: 20px;">center</div>
+  <div style="border: solid 1px; justify-self: self-start; height: 20px;">self-start</div>
+  <div style="border: solid 1px; justify-self: self-end; height: 20px;">self-end</div>
+  <div style="border: solid 1px; justify-self: stretch; height: 20px;">stretch</div>
+</div>
+start end left right center
+space-between space-around space-evenly
+<div style="display: grid; grid: repeat(3, 40px) / repeat(2, 100px);border: solid 1px green;justify-content: space-between;">
+  <div style="border: solid 1px;">left</div>
+  <div style="border: solid 1px;">right</div>
+  <div style="border: solid 1px;">start</div>
+  <div style="border: solid 1px;">end</div>
+  <div style="border: solid 1px;">center</div>
+  <div style="border: solid 1px;">self-start</div>
+  <div style="border: solid 1px;">self-end</div>
+  <div style="border: solid 1px;">stretch</div>
+</div>
+align
+<div style="display: grid; grid: repeat(3, 40px) / repeat(2, 100px);border: solid 1px green;align-items: left">
+  <div style="border: solid 1px; height: 20px; width: 70px">left</div>
+  <div style="border: solid 1px; align-self: right; height: 20px; width: 70px">right</div>
+  <div style="border: solid 1px; align-self: start; height: 20px; width: 70px">start</div>
+  <div style="border: solid 1px; align-self: end; height: 20px; width: 70px">end</div>
+  <div style="border: solid 1px; align-self: center; height: 20px; width: 70px">center</div>
+  <div style="border: solid 1px; align-self: self-start; height: 20px; width: 70px">self-start</div>
+  <div style="border: solid 1px; align-self: self-end; height: 20px; width: 70px">self-end</div>
+  <div style="border: solid 1px; align-self: stretch; height: 20px; width: 70px">stretch</div>
+</div>
+
+order
+<div style="display: grid; grid: repeat(2, 1fr) / repeat(2, 1fr);border: solid 1px green;">
+  <div style="border: solid 1px; margin: -10px; background: yellow; order: 2;">one</div>
+  <div style="border: solid 1px; ">two</div>
+  <div style="border: solid 1px; background: cyan; order: 1;">three</div>
+  <div style="border: solid 1px;">four</div>
+</div>
+
+
 </body>
 </html>
