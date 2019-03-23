@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<div style="transform: translateX(50px) translateY(-10px) translateZ(5px); border: solid 1px;">hello world</div>
+<div style="transform: translate(50px, 10px); border: solid 1px;">hello world</div>
+<div style="transform: translate3d(50px, 10px, 5px); border: solid 1px;">hello world</div>
+
+<div style="transform: scaleX(1) scaleY(2) scaleZ(5); border: solid 1px;margin: 30px;">hello world</div>
+<div style="transform: scale(1, 2); border: solid 1px;margin: 30px;">hello world</div>
+<div style="transform: scale3d(1, 2, 5); border: solid 1px;margin: 30px;">hello world</div>
+
+<div style="transform: rotateX(10deg) rotateY(-10deg) rotateZ(2deg); border: solid 1px;">hello world</div>
+<div style="transform: rotate(5deg); border: solid 1px;">hello world</div>
+<div style="transform: rotate3d(5, 5, 5, 1deg); border: solid 1px;">hello world</div>
+
+<div style="transform: skewX(5deg) skewY(-5deg); border: solid 1px;">hello world</div>
+<div style="transform: skew(5deg, 5deg); border: solid 1px;">hello world</div>
+
+left, center, right, top, bottom
+<div style="transform: rotate(1deg); border: solid 1px; transform-origin: left;">hello world</div>
+
+flat, preserve-3d
+<div style="transform: perspective(750px) rotateY(60deg) rotateX(-20deg);border: solid 1px;transform-style: preserve-3d;">
+outer
+<div style="transform: perspective(750px) translateZ(60px) rotateX(45deg);border: solid 1px;">inner</div>
+</div>
+
+<div style="transform: rotateX(80deg); border: solid 1px;backface-visibility: hidden;">hidden</div>
+<div style="transform: rotateX(200deg); border: solid 1px;backface-visibility: hidden;">hidden</div>
+
+</body>
+</html>

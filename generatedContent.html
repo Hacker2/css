@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+@counter-style letters {
+system: cyclic;
+symbols: a b;
+}
+div#one::before {content: "hello ";}
+div#one::after {content: " world";border: solid 1px;}
+div#one {border: solid 1px;}
+
+#two {color: green;}
+div#two::before {content: "<b>bla </b>"; display:block;}
+
+div#three::before {content: "[" attr(id) "]";}
+
+li::before {content: counter-increment: ordered; content: counter(ordered) ". "}
+li::after {content: counter-increment: ord; content: counter(ord)}
+</style>
+</head>
+<body>
+
+<div id="one">one</div>
+<div id="two">two</div>
+<div id="three">three</div>
+
+<ol style="list-style-type: none;">
+<li>one</li>
+<li>two</li>
+<li style="counter-increment: ordered ord;">three</li>
+<li style="counter-increment: ordered -3;">four</li>
+<li style="counter-increment: ordered 5;">five</li>
+<li style="counter-reset: ordered;">six</li>
+<li style="counter-increment: ordered;">seven</li>
+</ol>
+
+
+</body>
+</html>
