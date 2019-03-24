@@ -1,0 +1,86 @@
+<html>
+<style type="text/css">
+@keyframes fadeout {
+           from {
+                opacity: 1;
+           }
+           to {
+               opacity: 0;
+           }
+}
+@keyframes color-pop {
+           0% {
+                 color: black;
+                 background-color: white;
+           }
+           33% {
+                 color: gray;
+                 background-color: yellow;
+           }
+           100% {
+                color: white;
+                background-color: orange;
+           }
+}
+@keyframes W {
+           from {
+                left: 0;
+                top: 0;
+           }
+           25%, 75% {
+                top: 100%;
+           }
+           50% {
+                top: 50%;
+           }
+           to {
+                left: 100%;
+                top: 0;
+           }
+}
+@keyframes change_bgcolor {
+    45% {
+        background-color: green;
+        border-width: 10px;
+    }
+    55% {
+        background-color: blue;
+        border-width: 20px;
+    }
+}
+div#one {
+     background-color: red;
+     border: 1px black solid;
+     animation-duration: 5s;
+     animation-name: change_bgcolor;
+     animation-iteration-count: 1;
+     animation-direction: reverse;
+     animation-delay: 1s;
+     animation-play-state: running;
+}
+div#two {
+     background-color: red;
+     border: 1px black solid;
+     animation-duration: 10s, 20s, 50s, 5s;
+     animation-name: change_bgcolor, test, fadeout, color-pop, W;
+     animation-iteration-count: infinite, 5, 1, 2;
+     animation-direction: normal, reverse, alternate, alternate-reverse;
+     animation-delay: 1s, 2, 3s;
+     animation-play-state: running, paused;
+}
+div#three {
+     background-color: red;
+     border: 1px black solid;
+     animation: change_bgcolor 5s 1s 1 reverse running;
+}
+</style>
+<body>
+
+<div id="one">one</div>
+<div id="two">two</div>
+<div id="three">three</div>
+<div id="four" style="background-color: red;border: 1px black solid;animation: change_bgcolor 5s 1s 1 reverse running;">four</div>
+<div id="five">five</div>
+
+</body>
+</html>
